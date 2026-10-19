@@ -1,0 +1,627 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AKIJ Ready Mix Concrete Ltd - Strategic Marketing Analysis - Q1 FY26-27 Review and Q2 FY26-27 Action Plan</title>
+<style>
+:root{
+  --bg:#f6f7f9; --card:#ffffff; --ink:#1b2430; --muted:#5b6675; --line:#e2e6ec;
+  --navy:#1f3864; --navy-soft:#e7ecf5; --akij:#d97706; --akij-soft:#fdf1e1;
+  --good:#1e7a46; --good-soft:#e5f4ea; --bad:#b42318; --bad-soft:#fbe9e7; --bar:#8a9ab3;
+}
+@media (prefers-color-scheme: dark){
+  :root{
+    --bg:#11151b; --card:#1a2029; --ink:#e7ebf0; --muted:#9aa5b4; --line:#2b3340;
+    --navy:#8fb0e8; --navy-soft:#223047; --akij:#f0a43a; --akij-soft:#3a2c17;
+    --good:#5cc98a; --good-soft:#1c3326; --bad:#f08a7e; --bad-soft:#3b1f1c; --bar:#5d6b80;
+  }
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.55 "Segoe UI",Roboto,Helvetica,Arial,sans-serif}
+.wrap{max-width:1120px;margin:0 auto;padding:0 16px 70px}
+.hero{background:linear-gradient(135deg,#1f3864 0%,#16314f 55%,#24456e 100%);color:#fff;padding:40px 0 36px;border-bottom:4px solid var(--akij)}
+.hero .wrap{padding-bottom:0}
+.hero h1{font-size:30px;line-height:1.25;margin:8px 0 10px;color:#fff;max-width:1000px}
+.hero .lede{color:#c6d3e6;max-width:860px;margin:0}
+.hero-kpis{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:26px}
+.hkpi{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.16);border-radius:12px;padding:16px 18px}
+.hkpi .label{font-size:12px;color:#b9c9df;text-transform:uppercase;letter-spacing:.04em}
+.hkpi .val{font-size:26px;font-weight:700;margin:5px 0 2px;color:#fff;font-variant-numeric:tabular-nums}
+.hkpi .note{font-size:12.5px;color:#9fb2cc}
+nav{position:sticky;top:0;z-index:100;background:var(--card);border-bottom:1px solid var(--line);box-shadow:0 2px 10px rgba(20,40,80,.07);margin:0}
+nav .wrap{display:flex;flex-wrap:wrap;gap:2px;padding:0 8px}
+nav a{font-size:13px;text-decoration:none;color:var(--muted);padding:13px 14px;border-bottom:3px solid transparent;font-weight:500;white-space:nowrap}
+nav a:hover{color:var(--navy)}
+nav a.active{color:var(--navy);border-bottom-color:var(--akij);font-weight:700;background:var(--navy-soft)}
+a.src{color:var(--akij);text-decoration:none;border-bottom:1px dotted var(--akij)}
+a.src:hover{text-decoration:underline}
+a.src::after{content:" \2197";font-size:11px;opacity:.8}
+section{scroll-margin-top:72px}
+h2{font-size:21px;margin:46px 0 6px;color:var(--navy)}
+h2 .num{display:inline-block;min-width:28px;color:var(--muted);font-weight:500}
+.sub{color:var(--muted);margin:0 0 16px}
+h3{font-size:15px;margin:0 0 10px}
+.subsec{display:flex;align-items:center;gap:9px;font-size:14px;font-weight:700;color:var(--navy);margin:28px 0 4px;text-transform:uppercase;letter-spacing:.05em}
+.subsec .dot{width:10px;height:10px;border-radius:3px;background:var(--akij);flex:0 0 auto}
+.subsec .hint{font-size:12.5px;color:var(--muted);font-weight:400;text-transform:none;letter-spacing:0;margin-left:2px}
+.grid{display:grid;gap:14px}
+.kpis{grid-template-columns:repeat(4,1fr)}
+.two{grid-template-columns:1fr 1fr}
+.stack{grid-template-columns:1fr}
+.three{grid-template-columns:repeat(3,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:16px 18px}
+.kpi .label{font-size:12.5px;color:var(--muted)}
+.kpi .val{font-size:26px;font-weight:700;margin:4px 0 2px;font-variant-numeric:tabular-nums}
+.kpi .note{font-size:12.5px;color:var(--muted)}
+.callout{border-left:4px solid var(--akij);background:var(--akij-soft);padding:12px 16px;border-radius:6px;margin:14px 0}
+.callout.red{border-color:var(--bad);background:var(--bad-soft)}
+.callout.green{border-color:var(--good);background:var(--good-soft)}
+table{width:100%;border-collapse:collapse;font-size:13.5px;font-variant-numeric:tabular-nums}
+th,td{padding:8px 10px;border-bottom:1px solid var(--line);text-align:right;vertical-align:top}
+th:first-child,td:first-child{text-align:left}
+th{font-size:12px;text-transform:uppercase;letter-spacing:.04em;color:var(--muted);font-weight:600;background:var(--navy-soft)}
+tr.total td{font-weight:700;border-top:2px solid var(--line)}
+tr.hl td{background:var(--akij-soft);font-weight:600}
+td.l, th.l{text-align:left}
+.pos{color:var(--good);font-weight:600}
+.neg{color:var(--bad);font-weight:600}
+.up{color:var(--good);font-weight:600}
+.down{color:var(--bad);font-weight:600}
+.up::before{content:"\25B2 ";font-size:10px}
+.down::before{content:"\25BC ";font-size:10px}
+.tip{text-decoration:underline dotted var(--muted);cursor:help}
+.tablewrap{overflow-x:auto}
+.pending{color:var(--muted);font-style:italic}
+.bars{display:flex;flex-direction:column;gap:6px}
+.brow{display:grid;grid-template-columns:130px 1fr 64px;align-items:center;gap:10px;font-size:13px}
+.brow .name{white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.track{height:16px;background:var(--navy-soft);border-radius:4px;position:relative;overflow:hidden}
+.fill{height:100%;background:var(--bar);border-radius:4px}
+.brow.akij .fill{background:var(--akij)}
+.brow.akij .name,.brow.akij .v{font-weight:700;color:var(--akij)}
+.brow .v{text-align:right;font-variant-numeric:tabular-nums}
+.ref{position:absolute;top:-2px;bottom:-2px;width:2px;background:var(--ink);opacity:.6}
+.util .fill.over{background:var(--bad)}
+.util .fill.under{background:var(--bar)}
+.legend{font-size:12px;color:var(--muted);margin-top:8px}
+.pill{display:inline-block;font-size:11.5px;font-weight:700;padding:2px 8px;border-radius:999px}
+.pill.p{background:#e2efda;color:#30572a}.pill.r{background:#fff2cc;color:#6b5100}.pill.t{background:#ddebf7;color:#1f4e79}
+@media (prefers-color-scheme: dark){.pill.p{background:#24361e;color:#b9dfa6}.pill.r{background:#3d3412;color:#f3d77d}.pill.t{background:#1b2d44;color:#a9c9ef}}
+ol.findings{padding-left:20px;margin:0}
+ol.findings li{margin:0 0 8px}
+ul.tight{margin:6px 0 0;padding-left:18px}
+ul.tight li{margin-bottom:4px}
+.tom .card h3{display:flex;align-items:center;gap:8px}
+.item{border-top:1px solid var(--line);padding:10px 0}
+.item:first-of-type{border-top:0}
+.item b{display:block;font-size:13.5px}
+.item span{font-size:12.5px;color:var(--muted)}
+footer{margin-top:46px;padding-top:14px;border-top:1px solid var(--line);font-size:12.5px;color:var(--muted)}
+@media (max-width:860px){.hero-kpis,.kpis{grid-template-columns:1fr 1fr}.two,.three{grid-template-columns:1fr}.brow{grid-template-columns:96px 1fr 56px}}
+@media print{body{background:#fff}.card,.hkpi{break-inside:avoid}nav{display:none}h2{break-after:avoid}.hero{background:#1f3864!important}}
+</style>
+</head>
+<body>
+
+<div class="hero">
+  <div class="wrap">
+    <h1>AKIJ Ready Mix Concrete Ltd - Strategic Marketing Analysis - Q1 FY26-27 Review and Q2 FY26-27 Action Plan</h1>
+    <p class="lede">Q1 FY 2026-27 (Jul-Sep 2026): 2,807,747 CFT against a 3,950,000 CFT plan (71.1%), with July at 59.7%, August at 84.2% and September at 69.4%. Net sales were BDT 104.01 Cr, flat on Q1 FY25-26 while volume fell 15.7% and realisation rose 18.8% to BDT 370.4/CFT - growth is price-led. August net income was -BDT 15.1M against a +BDT 2.5M budget. Part B turns each finding into a Q2 (Oct-Dec 2026) action with a budget, owner and target.</p>
+    <div class="hero-kpis">
+      <div class="hkpi"><div class="label">Q1 FY26-27 volume</div><div class="val">2,807,747 CFT</div><div class="note">71.1% of 3,950,000 CFT plan</div></div>
+      <div class="hkpi"><div class="label">Q1 net sales</div><div class="val">BDT 104.01 Cr</div><div class="note">+0.1% YoY - volume -15.7%</div></div>
+      <div class="hkpi"><div class="label">Market share</div><div class="val">8%</div><div class="note">12.4% of listed deliveries - rank #5</div></div>
+    </div>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a href="#summary">Summary</a><a href="#q1">1 - Q1 performance</a><a href="#market">2 - Competitors</a><a href="#gap">3 - Gaps</a><a href="#tom">4 - TOM</a><a href="#q2">5 - Q2 action plan</a>
+  </div>
+</nav>
+
+<div class="wrap">
+
+<section id="summary">
+  <h2>Summary</h2>
+  <div class="grid two" style="margin-top:14px">
+    <div class="card tablewrap">
+      <h3>Brand activation pack (FY26-27 budget)</h3>
+      <table>
+        <tr><th class="l">Channel</th><th>FY26-27 budget (BDT)</th><th>Q1 plan</th><th>Q2 plan</th><th class="l">Read</th></tr>
+        <tr><td class="l">ATL</td><td>3,600,000</td><td>900,000</td><td>900,000</td><td class="pending">Actual not updated</td></tr>
+        <tr><td class="l">Digital</td><td>6,130,000</td><td>605,000</td><td>1,255,000</td><td class="pending">Actual not updated</td></tr>
+        <tr><td class="l">BTL</td><td>3,450,000</td><td>200,000</td><td>200,000</td><td class="pending">Actual not updated</td></tr>
+        <tr><td class="l">OOH</td><td>7,900,008</td><td>350,008</td><td>2,000,000</td><td class="pending">Actual not updated</td></tr>
+        <tr><td class="l">Gifts &amp; Printing</td><td>4,827,500</td><td>150,000</td><td>700,000</td><td>6,500 recorded</td></tr>
+        <tr class="total"><td class="l">Total</td><td>25,907,508</td><td>2,205,008</td><td>5,055,000</td><td>8.7% of FY plan in Q1</td></tr>
+      </table>
+      <div class="legend">Brand budget total BDT 25.91M. Q1 plan is BDT 2.205M (11.6% of FY); Q2 plan BDT 5.055M. Only BDT 6,500 Gifts is recorded; channel actuals are data required.</div>
+    </div>
+    <div class="card tablewrap">
+      <h3>Q1 commercial scorecard</h3>
+      <table>
+        <tr><th class="l">Metric</th><th>Value</th><th class="l">Read</th></tr>
+        <tr><td class="l">Q1 volume</td><td>2,807,747 CFT</td><td class="down">71.1% of 3.95M plan</td></tr>
+        <tr><td class="l">Q1 net sales</td><td>BDT 104.01 Cr</td><td>+0.1% YoY</td></tr>
+        <tr><td class="l">Q1 realisation</td><td>BDT 370.4/CFT</td><td class="pos">+18.8% YoY</td></tr>
+        <tr><td class="l">August net income</td><td>-BDT 15.1M</td><td class="down">vs +BDT 2.5M budget</td></tr>
+        <tr><td class="l">August gross margin</td><td>BDT 55.8M</td><td class="down">vs 84.5M budget</td></tr>
+        <tr><td class="l">Top 15 customer concentration</td><td>31.8%</td><td class="down">of YTD sales</td></tr>
+        <tr><td class="l">M20 / 3000 PSI share</td><td>2.1%</td><td class="down">of Sep net sales</td></tr>
+        <tr><td class="l">Capacity utilisation</td><td>51.9%</td><td class="pos">highest of top five</td></tr>
+      </table>
+      <div class="legend">DWH actuals, BU 175, Jul-29 Sep 2026. Realisation = net sales / CFT. August P&L from the August variance dashboard.</div>
+    </div>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+    <h3>Q1 key findings (each one has a Q2 solution in section 5)</h3>
+    <ol class="findings">
+      <li><b>Q1 volume was 2,807,747 CFT, 71.1% of the 3,950,000 CFT plan.</b> July 59.7%, August 84.2%, September 69.4%; the run-rate is far below the plan.</li>
+      <li><b>Growth is price-led, not volume-led.</b> Net sales are flat (+0.1%) while volume is down 15.7%; realisation rose 18.8% to BDT 370.4/CFT.</li>
+      <li><b>August was loss-making.</b> Net income was -BDT 15.1M against a +BDT 2.5M budget; gross margin was BDT 55.8M vs BDT 84.5M budget.</li>
+      <li><b>Plant profitability is uneven.</b> August NP margin: Rupganj +4.8%, Dhour -3.3%, Gazipur -2.8%, Narayanganj -35.5%, Chittagong -62.2%; September is negative at every plant.</li>
+      <li><b>The portfolio is concentrated.</b> 3500/4000/4500/5000 PSI PCC are 84.2% of Sep net sales; the growth grade M20/3000 PSI is only 2.1% of Sep and 3.0% of FY25-26.</li>
+      <li><b>Customer concentration is high.</b> The top 15 customers are BDT 33.06 Cr, 31.8% of YTD sales, led by A One Polar, Bashundhara City and Akij Ceramics.</li>
+      <li><b>Akij is the price leader in a price-sensitive market.</b> Blended BDT 370/CFT vs NDE 340-345, Shah 345-350, Bashundhara 340-345 and Crown 355-360; volume is paying for the premium.</li>
+      <li><b>Market position:</b> 8% total market (Marketing Pack; no DWH source) and 12.4% of listed RMC deliveries, rank #5; the gap to #4 Bashundhara is 150,000 CFT/month.</li>
+      <li><b>The website is not a sales channel.</b> The 14 Oct 2026 audit finds placeholders, a wrong company name, cement-heavy content and no quote, booking or plant locator.</li>
+    </ol>
+  </div>
+</section>
+
+<section id="q1">
+  <h2><span class="num">1</span>Q1 FY26-27 Commercial Performance</h2>
+  <p class="sub">DWH actuals (BU 175) and the FY26-27 sales plan. CFT = cubic feet; revenue is net sales; realisation = net sales / CFT. July is derived from the YTD total less August and 1-29 September.</p>
+
+  <div class="grid kpis">
+    <div class="card kpi"><div class="label">Q1 volume</div><div class="val">2.808M CFT</div><div class="note">71.1% of 3.95M plan</div></div>
+    <div class="card kpi"><div class="label">Q1 net sales</div><div class="val">BDT 104.01 Cr</div><div class="note">Flat YoY; volume -15.7%</div></div>
+    <div class="card kpi"><div class="label">Q1 realisation</div><div class="val">BDT 370.4/CFT</div><div class="note">+18.8% vs Q1 FY25-26</div></div>
+    <div class="card kpi"><div class="label">August net income</div><div class="val">-BDT 15.1M</div><div class="note">vs +BDT 2.5M budget</div></div>
+  </div>
+
+  <div class="grid two" style="margin-top:14px">
+    <div class="card tablewrap">
+      <h3>Q1 monthly volume vs plan</h3>
+      <table>
+        <tr><th class="l">Month</th><th>Plan (CFT)</th><th>Actual (CFT)</th><th>Achievement</th><th>Net sales (BDT Cr)</th><th>Realisation (BDT/CFT)</th></tr>
+        <tr><td class="l">Jul-26</td><td>1,300,000</td><td>776,339</td><td class="down">59.7%</td><td>28.80</td><td>370.9</td></tr>
+        <tr><td class="l">Aug-26</td><td>1,300,000</td><td>1,094,219</td><td class="down">84.2%</td><td>40.37</td><td>368.9</td></tr>
+        <tr><td class="l">Sep-26</td><td>1,350,000</td><td>937,189</td><td class="down">69.4%</td><td>34.84</td><td>371.8</td></tr>
+        <tr class="total"><td class="l">Q1 total</td><td>3,950,000</td><td>2,807,747</td><td class="down">71.1%</td><td>104.01</td><td>370.4</td></tr>
+      </table>
+      <div class="legend">September is 1-29 Sep (DWH cut-off 29 Sep 2026). July is derived from the YTD total less August and September. Q1 net sales and realisation from the Marketing Pack.</div>
+    </div>
+    <div class="card">
+      <h3>Q1 monthly volume achievement</h3>
+      <div class="bars util" id="monthChart"></div>
+      <div class="legend">Line marks 100% of the monthly plan. Q1 total 71.1%; September is the weakest month.</div>
+    </div>
+  </div>
+
+  <div class="grid two" style="margin-top:14px">
+    <div class="card tablewrap">
+      <h3>Q1 vs last year and FY26-27 plan</h3>
+      <table>
+        <tr><th class="l">Metric</th><th>Q1 FY25-26</th><th>Q1 FY26-27</th><th>Change</th></tr>
+        <tr><td class="l">Volume (CFT)</td><td>3,332,276</td><td>2,807,747</td><td class="down">-15.7%</td></tr>
+        <tr><td class="l">Net sales (BDT Cr)</td><td>103.89</td><td>104.01</td><td class="up">+0.1%</td></tr>
+        <tr><td class="l">Realisation (BDT/CFT)</td><td>311.8</td><td>370.4</td><td class="up">+18.8%</td></tr>
+        <tr><td class="l">FY25-26 full year (CFT)</td><td colspan="2">11,296,226</td><td>FY26-27 plan 17,200,000 (+49.0%)</td></tr>
+        <tr><td class="l">FY25-26 net sales (BDT Cr)</td><td colspan="2">365.32</td><td>FY26-27 plan 441-476 Cr (+25-35%)</td></tr>
+        <tr><td class="l">FY25-26 realisation (BDT/CFT)</td><td colspan="2">323.4</td><td class="up">+14.5% to Q1 FY26-27</td></tr>
+      </table>
+      <div class="legend">Q1 FY25-26 from the Marketing Pack: BDT 103.89 Cr / 3,332,276 CFT. FY26-27 sales plan from the 5-year plan.</div>
+    </div>
+    <div class="card tablewrap">
+      <h3>PSI mix, Aug vs Sep 2026</h3>
+      <table>
+        <tr><th class="l">Grade</th><th>Aug CFT</th><th>Sep CFT</th><th>Sep mix</th><th>Sep price (BDT/CFT)</th></tr>
+        <tr><td class="l">4000 PSI PCC</td><td>318,436</td><td>275,100</td><td>29.2%</td><td>368.9</td></tr>
+        <tr><td class="l">4500 PSI PCC</td><td>225,258</td><td>218,951</td><td>23.5%</td><td>374.2</td></tr>
+        <tr><td class="l">3500 PSI PCC</td><td>242,870</td><td>176,846</td><td>18.2%</td><td>358.3</td></tr>
+        <tr><td class="l">5000 PSI PCC</td><td>120,745</td><td>112,632</td><td>12.4%</td><td>381.8</td></tr>
+        <tr><td class="l">6000 PSI OPC</td><td>6,342</td><td>23,806</td><td>2.7%</td><td>395.5</td></tr>
+        <tr><td class="l">3000 PSI PCC (M20)</td><td>38,249</td><td>19,231</td><td>2.1%</td><td>354.9</td></tr>
+        <tr><td class="l">7250 PSI OPC</td><td>0</td><td>13,201</td><td>1.6%</td><td>410.0</td></tr>
+        <tr class="total"><td class="l">Total (excl. wastage)</td><td>1,093,586</td><td>937,152</td><td>100%</td><td>371.4</td></tr>
+      </table>
+      <div class="legend">Top four grades = 84.2% of Sep net sales. M20/3000 PSI is only 2.1% of Sep and 3.0% of FY25-26 - the growth grade has not started.</div>
+    </div>
+  </div>
+
+  <div class="card tablewrap" style="margin-top:14px">
+    <h3>Plant-wise P&L, Aug vs Sep 2026</h3>
+    <table>
+      <tr><th class="l">Profit centre</th><th>Aug net sales (BDT M)</th><th>Sep net sales (BDT M)</th><th>Aug NP margin</th><th>Sep NP margin</th><th class="l">Read</th></tr>
+      <tr><td class="l">Dhour</td><td>192.11</td><td>168.29</td><td class="down">-3.32%</td><td class="down">-8.36%</td><td class="l">Largest plant; margin deteriorated</td></tr>
+      <tr><td class="l">Rupganj</td><td>101.53</td><td>78.45</td><td class="pos">+4.82%</td><td class="down">-3.73%</td><td class="l">Only positive plant in Aug</td></tr>
+      <tr><td class="l">Gazipur</td><td>48.88</td><td>50.72</td><td class="down">-2.81%</td><td class="down">-3.00%</td><td class="l">Stable volume, thin margin</td></tr>
+      <tr><td class="l">Narayanganj</td><td>12.02</td><td>12.46</td><td class="down">-35.51%</td><td class="down">-39.97%</td><td class="l">Loss-making; fix or rephase</td></tr>
+      <tr><td class="l">Chittagong</td><td>8.01</td><td>10.52</td><td class="down">-62.15%</td><td class="down">-28.44%</td><td class="l">Smallest plant; heavy loss</td></tr>
+    </table>
+    <div class="legend">Source: plant-wise P&L, general ledger basis, fin.tblAccountingJournalArc, BU 175. Net sales are not additive to company total because common/corporate lines are separate.</div>
+  </div>
+
+  <div class="grid two" style="margin-top:14px">
+    <div class="card tablewrap">
+      <h3>August P&L vs budget</h3>
+      <table>
+        <tr><th class="l">Line</th><th>Budget (BDT M)</th><th>Actual (BDT M)</th><th>Variance</th></tr>
+        <tr><td class="l">Gross sales</td><td>450.15</td><td>403.36</td><td class="down">-46.79</td></tr>
+        <tr><td class="l">Net sales</td><td>413.67</td><td>361.92</td><td class="down">-51.75</td></tr>
+        <tr><td class="l">Gross margin</td><td>84.53</td><td>55.76</td><td class="down">-28.76</td></tr>
+        <tr><td class="l">Administrative expenses</td><td>4.94</td><td>2.10</td><td class="up">-2.84</td></tr>
+        <tr class="total"><td class="l">Net income after tax</td><td>2.52</td><td>-15.10</td><td class="down">-17.62</td></tr>
+      </table>
+      <div class="legend">August variance dashboard. Gross margin is 34.0% below budget; net income swung from +2.5M to -15.1M.</div>
+    </div>
+    <div class="card tablewrap">
+      <h3>Brand budget FY26-27 by channel</h3>
+      <table>
+        <tr><th class="l">Channel</th><th>FY plan (BDT M)</th><th>Q1 plan</th><th>Q2 plan</th><th>% of FY</th></tr>
+        <tr><td class="l">ATL</td><td>3.60</td><td>0.900</td><td>0.900</td><td>13.9%</td></tr>
+        <tr><td class="l">Digital</td><td>6.13</td><td>0.605</td><td>1.255</td><td>23.7%</td></tr>
+        <tr><td class="l">BTL</td><td>3.45</td><td>0.200</td><td>0.200</td><td>13.3%</td></tr>
+        <tr><td class="l">OOH</td><td>7.90</td><td>0.350</td><td>2.000</td><td>30.5%</td></tr>
+        <tr><td class="l">Gifts &amp; Printing</td><td>4.83</td><td>0.150</td><td>0.700</td><td>18.6%</td></tr>
+        <tr class="total"><td class="l">Total</td><td>25.91</td><td>2.205</td><td>5.055</td><td>100%</td></tr>
+      </table>
+      <div class="legend">Q1 plan is 11.6% of the FY envelope; Q2 is 19.5%. Actual spend is not updated except BDT 6,500 Gifts.</div>
+    </div>
+  </div>
+
+  <div class="callout red"><b>ROMI not calculable yet.</b> Campaign-wise spend and marketing-led revenue are not available for ARMCL; the Marketing Pack states FY25-26 marketing spend is not in DWH. Required: campaign-wise actual spend, baseline/comparison area, and gross margin. Do not use a ROMI multiple until these exist.</div>
+</section>
+
+<section id="market">
+  <h2><span class="num">2</span>Competitor analysis</h2>
+  <p class="sub">Ready-mix capacity, monthly deliveries and pricing from the capacity-utilisation sheet. Akij is 12.4% of the listed players and rank #5; total market share is 8% in the Marketing Pack (no DWH source).</p>
+
+  <div class="subsec"><span class="dot"></span>Offline</div>
+  <div class="grid two">
+    <div class="card">
+      <h3>Share of listed RMC deliveries</h3>
+      <div class="bars" id="shareChart"></div>
+      <div class="legend">Akij 12.4% of 10.05M CFT/month listed deliveries; total market share 8% including unlisted players.</div>
+    </div>
+    <div class="card tablewrap">
+      <h3>The ladder above Akij</h3>
+      <table>
+        <tr><th>Rank</th><th class="l">Company</th><th>CFT/month</th><th>Share</th><th>Gap to close (CFT)</th></tr>
+        <tr><td>1</td><td class="l">Shah</td><td>2,800,000</td><td>27.9%</td><td>1,550,000</td></tr>
+        <tr><td>3</td><td class="l">Crown</td><td>1,550,000</td><td>15.4%</td><td>300,000</td></tr>
+        <tr><td>4</td><td class="l">Bashundhara</td><td>1,400,000</td><td>13.9%</td><td>150,000</td></tr>
+        <tr class="hl"><td>5</td><td class="l">Akij</td><td>1,250,000</td><td>12.4%</td><td>-</td></tr>
+        <tr><td>6</td><td class="l">34 ECB</td><td>350,000</td><td>3.5%</td><td>-900,000</td></tr>
+      </table>
+      <div class="legend">Akij is 150,000 CFT/month behind #4 Bashundhara; the gap to #3 Crown is 300,000. NDE (1.85M) and Shah (2.8M) lead the market.</div>
+    </div>
+  </div>
+
+  <div class="card tablewrap" style="margin-top:14px">
+    <h3>Capacity, fleet and price positioning</h3>
+    <table>
+      <tr><th class="l">Company</th><th>Monthly CFT</th><th>Share</th><th>Price (BDT/CFT)</th><th>Plants</th><th>Mixers</th><th>Pumps</th><th class="l">Coverage</th></tr>
+      <tr><td class="l">Shah</td><td>2,800,000</td><td>27.9%</td><td>345-350</td><td>12</td><td>212</td><td>40</td><td class="l">Dhaka, Narayanganj, Gazipur, Tangail, Manikganj, Mymensingh</td></tr>
+      <tr><td class="l">NDE</td><td>1,850,000</td><td>18.4%</td><td>340-345</td><td>12</td><td>263</td><td>42</td><td class="l">Dhaka, Narayanganj, Chattogram, Mymensingh</td></tr>
+      <tr><td class="l">Crown</td><td>1,550,000</td><td>15.4%</td><td>355-360</td><td>5</td><td>116</td><td>32</td><td class="l">Dhaka, Narayanganj, Gazipur, Chattogram</td></tr>
+      <tr><td class="l">Bashundhara</td><td>1,400,000</td><td>13.9%</td><td>340-345</td><td>5</td><td>120</td><td>36</td><td class="l">Dhaka, Narayanganj, Narsingdi, Chattogram</td></tr>
+      <tr class="hl"><td class="l">Akij</td><td>1,250,000</td><td>12.4%</td><td>370</td><td>5</td><td>94</td><td>28</td><td class="l">Dhaka, Narayanganj, Gazipur, Chattogram</td></tr>
+      <tr><td class="l">34 ECB</td><td>350,000</td><td>3.5%</td><td>-</td><td>2</td><td>17</td><td>4</td><td class="l">Chattogram</td></tr>
+      <tr><td class="l">Superior</td><td>300,000</td><td>3.0%</td><td>-</td><td>2</td><td>17</td><td>4</td><td class="l">Chattogram</td></tr>
+      <tr><td class="l">PDL (RFL)</td><td>300,000+</td><td>3.0%</td><td>-</td><td>2+</td><td>20</td><td>5</td><td class="l">Dhaka, Chattogram</td></tr>
+      <tr><td class="l">Borak</td><td>250,000</td><td>2.5%</td><td>-</td><td>2</td><td>32</td><td>6</td><td class="l">Dhaka, Gazipur</td></tr>
+    </table>
+    <div class="legend">Source: ARMCL capacity-utilisation sheet. Akij has the highest price (BDT 370) and the highest capacity utilisation (51.9%) among the top five; NDE and Shah have the deepest fleet.</div>
+  </div>
+
+  <div class="grid two" style="margin-top:14px">
+    <div class="card">
+      <h3>Capacity utilisation, top five</h3>
+      <div class="bars" id="utilChart"></div>
+      <div class="legend">Akij 51.9% is the highest; Shah 23.6% has the most headroom. Utilisation is a strength today but a constraint on the +49% FY27 volume plan.</div>
+    </div>
+    <div class="card">
+      <h3>What the competitor data says</h3>
+      <ul class="tight">
+        <li><b>Akij is the price leader.</b> BDT 370/CFT vs 340-360 for the volume leaders; the 15.7% volume decline is the cost of that premium.</li>
+        <li><b>The gap to #4 is bridgeable.</b> 150,000 CFT/month is about 14% of Akij's current volume; #3 Crown needs 300,000.</li>
+        <li><b>Fleet depth is the moat.</b> Shah and NDE run 212-263 mixers and 40-42 pumps; Akij has 94 mixers and 28 pumps.</li>
+        <li><b>Coverage is comparable</b> in Dhaka, Narayanganj, Gazipur and Chattogram; the IHB/dealer route is the missing channel, not plant footprint.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="subsec"><span class="dot"></span>Digital <span class="hint">- akijreadymix.com audit &amp; next action plan</span></div>
+  <div class="grid two">
+    <div class="card tablewrap">
+      <h3>Website audit scorecard (14 Oct 2026)</h3>
+      <table>
+        <tr><th class="l">Area</th><th>Score</th><th class="l">Read</th></tr>
+        <tr><td class="l">User interface</td><td>2.0 / 5</td><td class="l">Cement-site template; thin pages and visible placeholders</td></tr>
+        <tr><td class="l">User experience</td><td>1.5 / 5</td><td class="l">No quote request, delivery booking, plant locator or downloads</td></tr>
+        <tr><td class="l">Tech &amp; platform</td><td>2.5 / 5</td><td class="l">Valid Yoast sitemap; Elementor behind the sister site</td></tr>
+        <tr><td class="l">SEO</td><td>2.0 / 5</td><td class="l">Custom titles, but content targets cement, not ready-mix</td></tr>
+        <tr><td class="l">Content &amp; trust</td><td>1.5 / 5</td><td class="l">Contradictory experience claims, copied text, no proof</td></tr>
+      </table>
+      <div class="legend">Desk review of 12 public pages and the sitemaps. Scores are provisional; no analytics or speed tests.</div>
+    </div>
+    <div class="card">
+      <h3>Critical findings</h3>
+      <ul class="tight">
+        <li><b>Contact page is broken:</b> refers to "Ajik Shipping", lists a placeholder phone +1234567890 and an unfinished Dhaka office block.</li>
+        <li><b>No ready-mix buying path:</b> no quote request, delivery booking, plant locator, pump option or WhatsApp contact.</li>
+        <li><b>Cement content crowds out ready-mix:</b> cement prices, factory pages and cement blog posts dominate; ready-mix gets a few lines.</li>
+        <li><b>Brand consistency:</b> "Akij Readymix", "Akij Ready Mix", "Akij Ready-Mix" and "AKIJ Ready Mix"; mobile social links go to the cement accounts.</li>
+        <li><b>No proof:</b> no plant, fleet or lab imagery; no technical data sheets or test records.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="card tablewrap" style="margin-top:14px">
+    <h3>Priority digital actions</h3>
+    <table>
+      <tr><th class="l">When</th><th class="l">Action</th><th>Impact</th><th class="l">Effort</th></tr>
+      <tr><td class="l">This week</td><td class="l">Fix the Contact page: correct company name, remove +1234567890, add real plant addresses and a hotline/WhatsApp.</td><td class="down">Critical</td><td class="l">Low</td></tr>
+      <tr><td class="l">This week</td><td class="l">Standardise the brand name and one experience claim; remove cement price and factory links from the ready-mix menu.</td><td class="down">High</td><td class="l">Low</td></tr>
+      <tr><td class="l">30 days</td><td class="l">Add quote request, delivery booking, plant locator and grade selector; route leads to a CRM/WhatsApp.</td><td>High</td><td class="l">Medium</td></tr>
+      <tr><td class="l">30 days</td><td class="l">Publish verified plant, fleet and lab imagery; add technical data sheets and test records.</td><td>High</td><td class="l">Medium</td></tr>
+      <tr><td class="l">60-120 days</td><td class="l">Ready-mix-first homepage: grades, plants, projects, proof and "get a quote"; Bangla version.</td><td>High</td><td class="l">Medium-high</td></tr>
+    </table>
+    <div class="callout">Benchmark: Holcim / Heidelberg / CEMEX for technical proof; UltraTech / Ambuja for dealer and calculator tools; Shah / Crown / Bashundhara for local market credibility.</div>
+  </div>
+
+  <div class="card" style="margin-top:14px">
+    <h3>Competitor digital data required</h3>
+    <p class="sub" style="margin:0 0 8px">The audit covers ACCL/ARMCL's own website. Competitor social, paid-media and web-traffic data was not provided; add these fields before building a competitor digital benchmark.</p>
+    <ul class="tight">
+      <li>Facebook, YouTube, Instagram, LinkedIn and TikTok followers/subscribers for Shah, NDE, Crown, Bashundhara, Akij and the next challengers.</li>
+      <li>Posts/month, engagement, Meta/Google spend, influencer activity, web traffic and search visibility.</li>
+    </ul>
+  </div>
+</section>
+
+<section id="gap">
+  <h2><span class="num">3</span>Gap with competitors and plan</h2>
+  <p class="sub">Gap = benchmark - Akij (a positive value means Akij is behind).</p>
+  <div class="card tablewrap">
+    <table>
+      <tr><th class="l">Performance gap</th><th>Akij</th><th>Benchmark</th><th class="l">Basis</th><th>Gap</th></tr>
+      <tr><td>Q1 volume vs plan</td><td>2,807,747 CFT</td><td>3,950,000</td><td class="l">FY26-27 sales plan</td><td class="down tip" title="2,807,747 / 3,950,000 = 71.1%">1,142,253 CFT short</td></tr>
+      <tr><td>Q1 volume growth</td><td>2,807,747</td><td>3,332,276</td><td class="l">Q1 FY25-26</td><td class="down tip" title="2,807,747 / 3,332,276 - 1 = -15.7%">15.7% behind</td></tr>
+      <tr><td>Q1 net sales growth</td><td>BDT 104.01 Cr</td><td>103.89 Cr</td><td class="l">Q1 FY25-26</td><td class="up">+0.1%</td></tr>
+      <tr><td>Realisation</td><td>370.4</td><td>311.8</td><td class="l">Q1 FY25-26</td><td class="up">+18.8%</td></tr>
+      <tr><td>August net income</td><td>-15.10</td><td>+2.52</td><td class="l">Budget (BDT M)</td><td class="down">-17.62M</td></tr>
+      <tr><td>August gross margin</td><td>55.76</td><td>84.53</td><td class="l">Budget (BDT M)</td><td class="down">-28.76M</td></tr>
+      <tr><td>Plant NP margin: Narayanganj</td><td>-39.97%</td><td>0%</td><td class="l">Sep 2026</td><td class="down">40.0 pp</td></tr>
+      <tr><td>Plant NP margin: Chittagong</td><td>-28.44%</td><td>0%</td><td class="l">Sep 2026</td><td class="down">28.4 pp</td></tr>
+      <tr><td>M20 / 3000 PSI share</td><td>2.1%</td><td>5.0%</td><td class="l">Q2 target</td><td class="down">2.9 pp</td></tr>
+      <tr><td>Top 15 customer concentration</td><td>31.8%</td><td>30.0%</td><td class="l">Diversification target</td><td class="down">1.8 pp</td></tr>
+      <tr><td>Market share (listed)</td><td>12.4%</td><td>13.9%</td><td class="l">#4 Bashundhara</td><td class="down">1.5 pp</td></tr>
+      <tr><td>Monthly volume vs #4</td><td>1,250,000</td><td>1,400,000</td><td class="l">Bashundhara</td><td class="down">150,000 CFT</td></tr>
+      <tr><td>Price premium</td><td>370</td><td>345-350</td><td class="l">Shah (BDT/CFT)</td><td class="down">20-25 high</td></tr>
+      <tr><td>Capacity utilisation</td><td>51.9%</td><td>38.9%</td><td class="l">NDE</td><td class="up">13.0 pp higher</td></tr>
+      <tr><td>Brand budget used, Q1</td><td>6,500</td><td>2,205,008</td><td class="l">Q1 plan (BDT)</td><td class="pending">Data required</td></tr>
+      <tr><td>Website quote/booking</td><td>Not available</td><td>Required</td><td class="l">14 Oct audit</td><td class="down">Missing</td></tr>
+    </table>
+    <div class="legend"><b>Units:</b> CFT = cubic feet; BDT Cr = crore; BDT M = million; pp = percentage points; x = multiple. <b>Sources:</b> ARMCL Marketing Pack (DWH BU 175), Aug vs Sep 2026 PSI CSV, 5-year sales plan, August variance dashboard, capacity-utilisation sheet, website audit. "Ahead" means Akij is better than the benchmark; "behind/under" means Akij is worse.</div>
+  </div>
+</section>
+
+<section id="tom">
+  <h2><span class="num">4</span>TOM</h2>
+  <p class="sub">Target Operating Model analysis across People, Process and Technology. First the gaps, then the solutions that close them.</p>
+
+  <div class="subsec"><span class="dot"></span>Gaps in TOM <span class="hint">- where People, Process and Technology fall short</span></div>
+  <div class="grid three tom">
+    <div class="card">
+      <h3><span class="pill p">PEOPLE</span> Gaps</h3>
+      <div class="item"><b>No IHB/dealer route</b><span>100% of Sep volume is corporate sales; 335 active customers in Q1 vs 623 in FY25-26; the IHB segment is not covered.</span></div>
+      <div class="item"><b>Sales execution gap</b><span>August review: 14 owners/projects below the logical benchmark; several at 12-34% achievement.</span></div>
+      <div class="item"><b>Customer concentration</b><span>Top 15 customers = BDT 33.06 Cr, 31.8% of YTD; losing one industrial account moves the plan.</span></div>
+      <div class="item"><b>Plant accountability</b><span>Narayanganj -40% and Chittagong -28% NP margin; no visible plant-level turnaround owner.</span></div>
+    </div>
+    <div class="card">
+      <h3><span class="pill r">PROCESS</span> Gaps</h3>
+      <div class="item"><b>Price-led growth</b><span>Realisation +18.8% but volume -15.7%; no price/volume ladder by segment or competitor.</span></div>
+      <div class="item"><b>Growth grade not launched</b><span>M20/3000 PSI is 2.1% of Sep; the plan depends on IHB volume that has no campaign or dealer route.</span></div>
+      <div class="item"><b>Margin discipline</b><span>August gross margin 34% below budget; plant mix, freight and wastage are not managed to a margin floor.</span></div>
+      <div class="item"><b>Brand spend tracking</b><span>Q1 brand plan BDT 2.205M; only BDT 6,500 recorded; no monthly actuals or campaign-level ROI.</span></div>
+      <div class="item"><b>Demand planning</b><span>Monsoon low season and project approval cycles are not in an early-warning process.</span></div>
+    </div>
+    <div class="card">
+      <h3><span class="pill t">TECHNOLOGY</span> Gaps</h3>
+      <div class="item"><b>Website cannot sell</b><span>No quote request, delivery booking, plant locator, grade selector or technical downloads.</span></div>
+      <div class="item"><b>Lead leakage</b><span>No CRM/WhatsApp lead capture; contact page has placeholders and the wrong company name.</span></div>
+      <div class="item"><b>No live margin view</b><span>Plant P&L, realisation and volume are reviewed in spreadsheets, not a live monthly dashboard.</span></div>
+      <div class="item"><b>No competitor tracker</b><span>Capacity, price and share data are one-off files; no monthly update.</span></div>
+    </div>
+  </div>
+
+  <div class="subsec"><span class="dot"></span>Solutions <span class="hint">- each solution maps to a gap above and an FY 2026-27 budget line</span></div>
+  <div class="grid three tom">
+    <div class="card">
+      <h3><span class="pill p">PEOPLE</span> Solutions</h3>
+      <div class="item"><b>IHB/dealer activation</b><span>Launch the M20/IHB route with dealer kits, contractor referral and WhatsApp ordering; target 50 new active dealers in Q2.</span></div>
+      <div class="item"><b>Owner/project recovery</b><span>Weekly review of the 14 below-benchmark owners; named recovery plan per account.</span></div>
+      <div class="item"><b>Key-account diversification</b><span>Grow the next 30 accounts; target top-15 concentration ≤30% by Dec.</span></div>
+      <div class="item"><b>Plant turnaround owners</b><span>Named plant heads for Narayanganj and Chittagong; monthly margin review.</span></div>
+    </div>
+    <div class="card">
+      <h3><span class="pill r">PROCESS</span> Solutions</h3>
+      <div class="item"><b>Segment price ladder</b><span>IHB/M20, project and industrial price bands; protect blended realisation ≥365.</span></div>
+      <div class="item"><b>M20 launch</b><span>IHB campaign, dealer/contractor referral, site demonstrations; target 5% mix by Dec.</span></div>
+      <div class="item"><b>Margin floor</b><span>Minimum gross margin per grade/plant; review freight, wastage and mix design monthly.</span></div>
+      <div class="item"><b>Brand budget tracker</b><span>Monthly actual vs plan by channel; 80-120% utilisation target.</span></div>
+      <div class="item"><b>Demand early warning</b><span>Weekly project pipeline and monsoon tracker; trigger recovery below 80% of monthly plan.</span></div>
+    </div>
+    <div class="card">
+      <h3><span class="pill t">TECHNOLOGY</span> Solutions</h3>
+      <div class="item"><b>Quote/booking/plant locator</b><span>On-site quote form, delivery booking, pump option and plant map; route to CRM/WhatsApp.</span></div>
+      <div class="item"><b>Lead capture</b><span>WhatsApp Business, click-to-chat and missed-call tracking; cost per lead by campaign.</span></div>
+      <div class="item"><b>Live margin dashboard</b><span>Volume, realisation, plant P&L and lead pipeline in one monthly review.</span></div>
+      <div class="item"><b>Competitor scorecard</b><span>Monthly capacity, price, share and activity for the 10 listed players.</span></div>
+    </div>
+  </div>
+</section>
+
+<section id="q2">
+  <h2><span class="num">5</span>Q2 action plan: October-December 2026</h2>
+  <p class="sub">Part B. Each Q1 finding becomes a Q2 solution with a budget line, owner, timing and target.</p>
+
+  <div class="grid kpis">
+    <div class="card kpi"><div class="label">Q2 volume target (plan)</div><div class="val">4,250,000 CFT</div><div class="note">Oct 1.35M - Nov 1.4M - Dec 1.5M</div></div>
+    <div class="card kpi"><div class="label">Q2 net sales at current realisation</div><div class="val">BDT 157.4 Cr</div><div class="note">At BDT 370.4/CFT</div></div>
+    <div class="card kpi"><div class="label">Q2 brand budget</div><div class="val">BDT 5.055M</div><div class="note">ATL 0.9 - Digital 1.255 - OOH 2.0</div></div>
+    <div class="card kpi"><div class="label">Q2 net income target</div><div class="val">Positive</div><div class="note">Vs -BDT 15.1M in August</div></div>
+  </div>
+
+  <div class="subsec"><span class="dot"></span>Where to play and how to win</div>
+  <div class="grid two">
+    <div class="card tablewrap">
+      <h3>Segment priority</h3>
+      <table>
+        <tr><th class="l">Segment</th><th>Current</th><th>Q2 priority</th><th class="l">Why</th></tr>
+        <tr><td class="l">IHB / small residential (M20 3000 PSI)</td><td>2.1% of Sep</td><td class="pos">Lead</td><td class="l">Growth grade; 3.0% of FY25-26; plan depends on it</td></tr>
+        <tr><td class="l">Repeat industrial / project accounts</td><td>Top 15 = 31.8%</td><td class="pos">Defend</td><td class="l">Core volume and margin; protect contracts</td></tr>
+        <tr><td class="l">Hero grades 3500/4000/4500/5000</td><td>84.2% of Sep</td><td>Hold</td><td class="l">Portfolio backbone; price/mix discipline</td></tr>
+        <tr><td class="l">High-spec 6000/7250 OPC</td><td>4.3% of Sep</td><td>Grow</td><td class="l">Premium projects; margin opportunity</td></tr>
+        <tr><td class="l">Dealer / contractor route</td><td>Not built</td><td class="pos">Build</td><td class="l">Only route to IHB; 100% corporate today</td></tr>
+      </table>
+      <div class="legend">Shares from Sep 2026 PSI mix; concentration from the Marketing Pack. M20 is the growth grade.</div>
+    </div>
+    <div class="card">
+      <h3>How to win: strategic choices</h3>
+      <table>
+        <tr><td class="l" style="width:34%"><b>Aspiration</b></td><td class="l">Deliver 17.2M CFT in FY26-27 (+49%) and lift listed share from 12.4% to 14%.</td></tr>
+        <tr><td class="l"><b>Segments</b></td><td class="l">Lead with IHB/M20; defend repeat industrial; hold hero PCC grades; grow high-spec OPC.</td></tr>
+        <tr><td class="l"><b>Regions</b></td><td class="l">Dhaka, Narayanganj, Gazipur and Chattogram; fix Narayanganj/Chittagong plant economics.</td></tr>
+        <tr><td class="l"><b>Customers</b></td><td class="l">IHB and small contractors through dealers; top industrial accounts through direct contracts.</td></tr>
+        <tr><td class="l"><b>How to win</b></td><td class="l">Right grade, on-time delivery, technical proof and a clear quote/booking path - not only price.</td></tr>
+        <tr><td class="l"><b>Systems</b></td><td class="l">Monthly margin/volume dashboard, competitor scorecard, brand budget tracker, CRM lead capture.</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="card tablewrap" style="margin-top:14px">
+    <h3>Target customer (ICP) - who Q2 is aimed at</h3>
+    <p class="sub" style="margin:0 0 10px">The route to market is 100% corporate today. Q2 builds the IHB/dealer route while protecting the repeat industrial accounts that carry the base.</p>
+    <table>
+      <tr><th class="l">Target customer (ICP)</th><th>Q2 priority</th><th class="l">What they care about</th><th class="l">Q2 campaigns aimed at them</th><th class="l">When</th></tr>
+      <tr><td class="l">IHB / small residential builder</td><td class="pos">Lead</td><td class="l">Right M20 grade, strength, on-time delivery, simple ordering</td><td class="l">M20 launch, IHB landing page, WhatsApp order, contractor referral, site demos</td><td class="l">Oct-Dec</td></tr>
+      <tr><td class="l">Contractor / mason / referral</td><td class="pos">Enable</td><td class="l">Commission, technical support, recognition</td><td class="l">Contractor referral, dealer kit, site visit, training</td><td class="l">Oct-Dec</td></tr>
+      <tr><td class="l">Industrial / project account</td><td>Defend</td><td class="l">Supply reliability, pump/fleet, credit, test proof</td><td class="l">Key-account review, technical data sheets, delivery SLA</td><td class="l">Oct-Dec</td></tr>
+      <tr><td class="l">Developer / consultant</td><td>Grow</td><td class="l">Specification, plant capacity, quality records</td><td class="l">Project pipeline, site branding, engineer engagement</td><td class="l">Nov-Dec</td></tr>
+    </table>
+    <div class="legend">ICP from the Marketing Pack and Brand Activation Roadmap. IHB is the growth segment; industrial is the base.</div>
+  </div>
+
+  <div class="callout red"><b>Fix now: volume and margin.</b> Q1 is 28.9% below plan and August net income is BDT 17.6M below budget. Q2 needs 4.25M CFT (+51% QoQ) while protecting realisation. The first move is a segment price ladder plus IHB/M20 activation, not a blanket price cut.</div>
+
+  <div class="card tablewrap" style="margin-top:14px">
+    <h3>From Q1 finding to Q2 solution</h3>
+    <table>
+      <tr><th class="l" style="width:22%">Q1 finding</th><th class="l" style="width:30%">Q2 solution</th><th class="l">Pillar</th><th class="l">Owner</th><th class="l">When</th><th class="l">Q2 target</th></tr>
+      <tr><td>Q1 volume 71.1%; September 69.4%</td><td class="l">Monthly volume recovery plan by plant/customer; weekly pipeline review; recover top-15 accounts</td><td class="l"><span class="pill p">PEOPLE</span></td><td class="l">Sales Head, Plant Heads</td><td class="l">Oct, weekly</td><td class="l">4.25M CFT in Q2</td></tr>
+      <tr><td>Price premium 370 vs 340-360; volume -15.7%</td><td class="l">Segment price ladder: IHB/M20, project and industrial; protect blended realisation >=365</td><td class="l"><span class="pill r">PROCESS</span></td><td class="l">Commercial, Finance</td><td class="l">Oct</td><td class="l">Realisation >=365; volume +51%</td></tr>
+      <tr><td>M20/3000 PSI only 2.1% of Sep</td><td class="l">Launch IHB/M20 campaign with dealer kits, contractor referral and WhatsApp ordering</td><td class="l"><span class="pill t">TECH</span></td><td class="l">Brand Custodian, Sales</td><td class="l">Oct-Dec</td><td class="l">M20 >=5% of mix</td></tr>
+      <tr><td>August net income -15.1M vs +2.5M budget</td><td class="l">Margin floor by grade/plant; monthly freight, wastage and mix review</td><td class="l"><span class="pill r">PROCESS</span></td><td class="l">Finance, Operations</td><td class="l">From Oct</td><td class="l">Positive net income in Q2</td></tr>
+      <tr><td>Narayanganj -40%, Chittagong -28% NP margin</td><td class="l">Plant turnaround plan: cost, mix, freight and volume; fix or rephase</td><td class="l"><span class="pill p">PEOPLE</span></td><td class="l">Plant Heads, COO</td><td class="l">Oct-Dec</td><td class="l">Halve losses; positive at Dhour/Rupganj</td></tr>
+      <tr><td>Top 15 customers 31.8% of YTD</td><td class="l">Diversify: next 30 accounts + IHB/dealer route</td><td class="l"><span class="pill p">PEOPLE</span></td><td class="l">Sales Head</td><td class="l">Oct-Dec</td><td class="l">Top-15 <=30%</td></tr>
+      <tr><td>Brand Q1 actual only BDT 6,500</td><td class="l">Monthly brand budget tracker by channel; campaign-level actuals</td><td class="l"><span class="pill r">PROCESS</span></td><td class="l">Brand Custodian, Finance</td><td class="l">From Oct</td><td class="l">80-120% utilisation</td></tr>
+      <tr><td>Website placeholders; no quote/booking</td><td class="l">Fix contact page; add quote, delivery booking, plant locator and CRM lead capture</td><td class="l"><span class="pill t">TECH</span></td><td class="l">Brand Custodian, Digital</td><td class="l">Oct-Nov</td><td class="l">Live quote/booking; leads tracked</td></tr>
+      <tr><td>Competitor data ad hoc</td><td class="l">Monthly scorecard for 10 players: capacity, price, share, activity</td><td class="l"><span class="pill p">PEOPLE</span></td><td class="l">Market Intelligence</td><td class="l">By the 10th</td><td class="l">10 of 10 scored monthly</td></tr>
+      <tr><td>Market share 8% total / 12.4% listed</td><td class="l">Target #4 Bashundhara: 150,000 CFT/month gap; focus Dhaka/Chattogram and IHB</td><td class="l"><span class="pill p">PEOPLE</span></td><td class="l">Sales Head, Marketing</td><td class="l">Monthly</td><td class="l">Listed share 13.5% by Dec</td></tr>
+    </table>
+  </div>
+
+  <div class="grid two" style="margin-top:14px">
+    <div class="card tablewrap">
+      <h3>Q2 brand budget by channel (BDT M)</h3>
+      <table>
+        <tr><th class="l">Channel</th><th>Q2 plan</th><th>Proposed</th><th>Change</th><th class="l">Reason</th></tr>
+        <tr><td class="l">ATL</td><td>0.900</td><td>0.900</td><td>-</td><td class="l">Brand trust campaign</td></tr>
+        <tr><td class="l">Digital</td><td>1.255</td><td>1.455</td><td class="pos">+0.200</td><td class="l">Quote/booking and IHB lead gen</td></tr>
+        <tr><td class="l">BTL</td><td>0.200</td><td>0.500</td><td class="pos">+0.300</td><td class="l">Dealer kit and contractor activation</td></tr>
+        <tr><td class="l">OOH</td><td>2.000</td><td>2.000</td><td>-</td><td class="l">Site and corridor visibility</td></tr>
+        <tr><td class="l">Gifts &amp; Printing</td><td>0.700</td><td>0.400</td><td class="neg">-0.300</td><td class="l">Trim; shift to dealer/IHB activation</td></tr>
+        <tr class="total"><td class="l">Total</td><td>5.055</td><td>5.255</td><td class="up">+0.200</td><td class="l">Fund from FY envelope</td></tr>
+      </table>
+      <div class="legend">Proposed shifts are within the FY26-27 brand envelope; the +0.2M is funded by phasing, not new money.</div>
+    </div>
+    <div class="card">
+      <h3>Q2 calendar</h3>
+      <table>
+        <tr><td class="l" style="width:16%"><b>Oct</b></td><td class="l">Segment price ladder · M20/IHB launch · website contact fix and quote form · contractor referral · plant turnaround plans</td></tr>
+        <tr><td class="l"><b>Nov</b></td><td class="l">IHB digital campaign and WhatsApp ordering · dealer activation · project/developer pipeline · competitor price check · plant margin review</td></tr>
+        <tr><td class="l"><b>Dec</b></td><td class="l">Year-end project close · retention offers · Q2 volume/margin review · Q3 plan · website quote/booking live</td></tr>
+      </table>
+    </div>
+  </div>
+
+  <div class="card tablewrap" style="margin-top:14px">
+    <h3>Q2 scorecard (review at the end of each month)</h3>
+    <table>
+      <tr><th class="l">KPI</th><th>Q1 actual</th><th>Q2 target</th><th class="l">Source</th></tr>
+      <tr><td>Sales volume (CFT)</td><td>2,807,747 (71.1%)</td><td>4,250,000</td><td class="l">DWH / 5-year sales plan</td></tr>
+      <tr><td>Net sales (BDT Cr)</td><td>104.01</td><td>~157.4</td><td class="l">DWH / realisation 370.4</td></tr>
+      <tr><td>Realisation (BDT/CFT)</td><td>370.4</td><td>>=365</td><td class="l">DWH</td></tr>
+      <tr><td>Net income after tax</td><td>-15.1M (Aug)</td><td>Positive</td><td class="l">August variance dashboard</td></tr>
+      <tr><td>Plant NP margin</td><td>Narayanganj -40.0%; Chittagong -28.4%</td><td>Halve losses; Dhour/Rupganj positive</td><td class="l">Plant P&L</td></tr>
+      <tr><td>M20 / 3000 PSI share</td><td>2.1%</td><td>5.0%</td><td class="l">PSI mix</td></tr>
+      <tr><td>Top 15 customer concentration</td><td>31.8%</td><td><=30%</td><td class="l">DWH</td></tr>
+      <tr><td>Brand budget utilisation</td><td>6,500 recorded</td><td>80-120% of plan</td><td class="l">Brand budget</td></tr>
+      <tr><td>Website quote/booking</td><td>Not available</td><td>Live, leads tracked</td><td class="l">Website audit</td></tr>
+      <tr><td>Listed market share</td><td>12.4%</td><td>13.5%</td><td class="l">Capacity utilisation</td></tr>
+    </table>
+  </div>
+
+  <div class="callout" style="margin-top:14px"><b>Data note:</b> Q1 actuals are DWH BU 175 for 1 Jul-29 Sep 2026; July is derived from the YTD total less August and 1-29 September. Brand actuals are not updated except BDT 6,500 Gifts. ROMI is not calculable until campaign-wise spend and marketing-led revenue are available. The live MSSQL DWH was unreachable at build time.</div>
+</section>
+
+<footer>
+  <b>Assumptions:</b> volume unit is CFT; net sales from DWH; realisation = net sales / CFT; FY26-27 sales plan 17.2M CFT (+49%); Q2 plan Oct 1.35M, Nov 1.4M, Dec 1.5M. August P&L from the August variance dashboard; plant P&L from fin.tblAccountingJournalArc, BU 175. Market share 8% total from the Marketing Pack (no DWH source); listed share 12.4% from the capacity-utilisation sheet. Competitor and brand actuals are data required where marked.<br>
+  <b>Sources:</b> ARMCL Marketing Pack (DWH actuals, 29 Sep 2026); AKIJ Readymix_Aug_vs_Sep_2026_PSI_wise.csv; ARMCL 5 Years Budget Market Share Plan FY26-27 to FY30-31; ARMCL Brand Budget 2026-27; ARMCL Aug26 Revenue Performance Review; Akij RMC Variance Dashboard; ARMCL P&L Aug26; capacity-utilisation sheet; AKIJ-ReadyMix-Website-Audit-2026.pdf (14 Oct 2026); Akij ReadyMix Brand Activation Pack Roadmap. Prepared 19 Oct 2026.
+</footer>
+</div>
+
+<script>
+(function(){
+  var month=[["Jul-26",59.7],["Aug-26",84.2],["Sep-26",69.4]];
+  var m=document.getElementById('monthChart');
+  month.forEach(function(d){
+    var cls=d[1]>=100?'':'over';
+    m.insertAdjacentHTML('beforeend','<div class="brow"><div class="name">'+d[0]+'</div><div class="track"><div class="fill '+cls+'" style="width:'+(d[1]/120*100)+'%"></div><div class="ref" style="left:'+(100/120*100)+'%"></div></div><div class="v" style="color:'+(d[1]>=100?'var(--good)':'var(--bad)')+'">'+d[1].toFixed(1)+'%</div></div>');
+  });
+
+  var share=[["Shah",27.9],["NDE",18.4],["Crown",15.4],["Bashundhara",13.9],["Akij",12.4],["34 ECB",3.5],["PDL (RFL)",3.0],["Superior",3.0],["Borak",2.5]];
+  var s=document.getElementById('shareChart');
+  share.forEach(function(d){
+    s.insertAdjacentHTML('beforeend','<div class="brow'+(d[0]==="Akij"?' akij':'')+'"><div class="name">'+d[0]+'</div><div class="track"><div class="fill" style="width:'+(d[1]/30*100)+'%"></div></div><div class="v">'+d[1].toFixed(1)+'%</div></div>');
+  });
+
+  var util=[["Shah",23.6],["NDE",38.9],["Crown",49.4],["Bashundhara",44.0],["Akij",51.9]];
+  var u=document.getElementById('utilChart');
+  util.slice().sort(function(a,b){return b[1]-a[1]}).forEach(function(d){
+    u.insertAdjacentHTML('beforeend','<div class="brow'+(d[0]==="Akij"?' akij':'')+'"><div class="name">'+d[0]+'</div><div class="track"><div class="fill" style="width:'+(d[1]/60*100)+'%"></div></div><div class="v">'+d[1].toFixed(1)+'%</div></div>');
+  });
+
+  var links=Array.prototype.slice.call(document.querySelectorAll('nav a'));
+  var sections=links.map(function(a){return document.querySelector(a.getAttribute('href'));}).filter(Boolean);
+  function onScroll(){
+    var pos=(window.scrollY||document.documentElement.scrollTop)+140;
+    var current=sections[0];
+    sections.forEach(function(sec){ if(sec.offsetTop<=pos) current=sec; });
+    links.forEach(function(a){ a.classList.toggle('active', a.getAttribute('href')==='#'+current.id); });
+  }
+  window.addEventListener('scroll', onScroll, {passive:true});
+  onScroll();
+})();
+</script>
+</body>
+</html>
